@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Export some stuff for the script
 
 # If u execute the script from the symlink then this will make the source as root folder for other scripts aswell.
