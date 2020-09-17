@@ -37,7 +37,7 @@ case $CHOICE in
         1)
             echo "Setting up beryllium"
             ls
-            ./scripts/beryllium.sh
+            ./patcher/scripts/beryllium.sh
             ;;
         #2)
             #echo "Building kernel"
