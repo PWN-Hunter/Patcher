@@ -1,7 +1,7 @@
 # Export some stuff for the script
 
 # If u execute the script from the symlink then this will make the source as root folder for other scripts aswell.
-SOURCE=$(pwd)
+export SOURCE=$(pwd)
 
 # gna check if dialog is installed
 
