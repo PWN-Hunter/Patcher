@@ -38,7 +38,6 @@ clear
 case $CHOICE in
         1)
             echo "Setting up beryllium"
-            ls
             ./patcher/scripts/beryllium.sh
             ;;
         #2)
