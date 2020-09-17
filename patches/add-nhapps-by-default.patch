@@ -1,0 +1,14 @@
+--- a/vendor/lineage/config/common.mk  2020-09-17 12:59:04.100906000 +0300
++++ b/vendor/lineage/config/common.mk  2020-09-17 14:46:21.616958348 +0300
+@@ -105,6 +105,11 @@
+ PRODUCT_PACKAGES += \
+     Terminal
+ 
++# Add NHAPPS
++PRODUCT_PACKAGES += \
++    NetHunter-T420 \
++    Term-420
++
+ # Lineage packages
+ PRODUCT_PACKAGES += \
+     LineageParts \
