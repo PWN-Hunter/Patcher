@@ -40,10 +40,6 @@ case $CHOICE in
             echo "Setting up beryllium"
             ./patcher/scripts/beryllium.sh
             ;;
-        #2)
-            #echo "Building kernel"
-            #./scripts/patch.sh
-            #;;
         2)
             echo "Bye."
             exit 1
