@@ -9,7 +9,7 @@ export SOURCE=$(pwd)
 
 if [ $(dpkg-query -W -f='${Status}' dialog 2>/dev/null | grep -c "ok installed") -eq 0 ];
 then
-  echo "run deps.sh";
+  echo "apt install dialog";
   exit 1
 fi
 
@@ -21,8 +21,8 @@ BACKTITLE="Kernel compiler script"
 TITLE=""
 MENU="Choose one of the following options:"
 
-OPTIONS=(1 "Setup base for beryllium"
-         #2 "patch the rom source for nh"
+OPTIONS=(1 "Setup base for beryllium no kernel"
+         2 "Setup base for j7y17lte no kernel"
          2 "Exit"
          )
 
@@ -41,6 +41,10 @@ case $CHOICE in
             ./patcher/scripts/beryllium.sh
             ;;
         2)
+            echo "Setting up j7y17lte"
+            ./patcher/scripts/j7y17lte.sh
+            ;;
+        3)
             echo "Bye."
             exit 1
             ;;
